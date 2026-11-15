@@ -10,7 +10,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        # Pinned rather than ubuntu-latest: the 24.04 -> 26.04 migration does
+        # not yet ship builds for every Python version we test.
+        os: [ubuntu-24.04, macos-latest, windows-latest]
         python: ["3.10", "3.12", "3.13"]
 
     steps:
