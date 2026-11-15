@@ -1,0 +1,2 @@
+pytest>=8
+python-pptx>=0.6.21
