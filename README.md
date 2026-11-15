@@ -89,6 +89,16 @@ pip install python-pptx lxml
 Optional: set `CROSSREF_MAILTO=you@example.com` so Crossref requests join the
 "polite pool" and get more reliable responses.
 
+For the reasoning behind the symlink setup, see
+[docs/what-is-a-skill.md](docs/what-is-a-skill.md); for troubleshooting when a
+skill silently stops loading, see [docs/installation.md](docs/installation.md).
+
+## Writing your own skill
+
+Copy [`templates/SKILL.md`](templates/SKILL.md) as a starting point, then link
+it the same way. The template's frontmatter `name` is a placeholder — replace
+it with a lowercase hyphenated name such as `my-skill`.
+
 ## Usage
 
 **In Claude Code**, the skills trigger from natural language — *"find me
